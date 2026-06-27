@@ -3,13 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f4ee" />
   <title>Anvera Systems — Contact</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500;1,600&amp;family=DM+Sans:wght@400;500;600;700&amp;family=DM+Mono:wght@400;500&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
   <div class="nav-inner">
     <a href="index.html" class="brand" aria-label="Anvera Systems home">
@@ -34,22 +37,22 @@
       </div>
     </a>
 
-    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+    <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-navigation">
       <span></span>
     </button>
 
-    <div class="nav-menu">
+    <nav class="nav-menu" id="primary-navigation" aria-label="Primary navigation">
       <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
         <li><a href="demo.html">Demo</a></li>
       </ul>
       <a href="contact.html" class="nav-cta active">Contact ↗</a>
-    </div>
+    </nav>
   </div>
 </header>
 
-<main>
+<main id="main-content">
   <section class="page-hero">
     <div class="hero-bg"></div>
     <div class="container">
