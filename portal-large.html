@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anvera Business Systems — Portal</title>
+  <style>html,body{margin:0;min-height:100%;background:#f7f4ee}body{font-family:Arial,sans-serif}.loading{min-height:100vh;display:grid;place-items:center;color:#1e2e1e;font-size:18px}</style>
+</head>
+<body>
+  <div class="loading">Loading portal…</div>
+  <script>
+    const largerPortalType = `
+      <style id="larger-portal-type">
+        .eye{font-size:12px!important}
+        .brand small,.sideBrand small{font-size:11px!important}
+        .hero p{font-size:18px!important}
+        .preview span{font-size:12px!important}
+        .intro{font-size:15px!important}
+        .loginCard label{font-size:14px!important}
+        .loginCard input,.loginCard select{font-size:15px!important}
+        .pass button{font-size:13px!important}
+        .enter,.action{font-size:14px!important}
+        .error,.back{font-size:13px!important}
+        .note{font-size:12px!important}
+        .nav button{font-size:14px!important}
+        .user strong{font-size:13px!important}
+        .user small{font-size:11px!important}
+        .logout{font-size:12px!important}
+        .top h2{font-size:31px!important}
+        .head h3,.welcome h3,.clientHero h3{font-size:40px!important}
+        .head p,.welcome p,.clientHero p{font-size:14px!important}
+        .chip,.status{font-size:11px!important}
+        .alert strong{font-size:14px!important}
+        .alert p{font-size:12px!important}
+        .card>span{font-size:12px!important}
+        .card small{font-size:11px!important}
+        .panel h3{font-size:28px!important}
+        .list strong,.pay strong{font-size:13px!important}
+        .list small,.pay small{font-size:11px!important}
+        .project h4,.client h4{font-size:27px!important}
+        .project p,.client p{font-size:12px!important}
+        .stages span{font-size:9px!important}
+        .meta small{font-size:10px!important}
+        .meta strong{font-size:13px!important}
+        .tableWrap th{font-size:10px!important}
+        .tableWrap td{font-size:12px!important}
+        .tableWrap td small{font-size:10px!important}
+        .stageMarks span{font-size:12px!important}
+        .stageMarks small{font-size:10px!important}
+        .update{font-size:13px!important}
+        .timeline h4{font-size:27px!important}
+        .timeline p{font-size:11px!important}
+        .file strong{font-size:12px!important}
+        .file small{font-size:10px!important}
+        .file button{font-size:11px!important}
+        .support label{font-size:13px!important}
+        .support textarea,.support select{font-size:14px!important}
+        .tickets strong{font-size:13px!important}
+        .tickets p{font-size:12px!important}
+        .tickets small{font-size:10px!important}
+        @media(max-width:720px){
+          .top h2{font-size:25px!important}
+          .head h3,.welcome h3,.clientHero h3{font-size:34px!important}
+          .panel h3{font-size:25px!important}
+          .nav button{font-size:15px!important}
+        }
+      </style>`;
+
+    fetch('portal.html', { cache: 'no-store' })
+      .then(response => {
+        if (!response.ok) throw new Error('Portal could not be loaded.');
+        return response.text();
+      })
+      .then(html => {
+        html = html.replace('</head>', largerPortalType + '</head>');
+        document.open();
+        document.write(html);
+        document.close();
+      })
+      .catch(() => {
+        document.body.innerHTML = '<div class="loading">The portal could not be loaded. Please refresh the page.</div>';
+      });
+  </script>
+</body>
+</html>
