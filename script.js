@@ -28,6 +28,14 @@ if (!prefersReducedMotion) {
   }, 100);
 }
 
+// Add portal access across the public website
+const publicNavLinks = document.querySelector('.nav-links');
+if (publicNavLinks && !publicNavLinks.querySelector('a[href="portal.html"]')) {
+  const portalItem = document.createElement('li');
+  portalItem.innerHTML = '<a href="portal.html">Portal Login</a>';
+  publicNavLinks.appendChild(portalItem);
+}
+
 // Mobile nav
 const navToggle = document.querySelector('.nav-toggle');
 const navMenu = document.querySelector('.nav-menu');
