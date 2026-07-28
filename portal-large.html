@@ -15,11 +15,13 @@
       </style>`;
 
     Promise.all([
-      fetch('portal.html?v=3', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('portal'); return r.text(); }),
-      fetch('portal-clean.js?v=3', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('clean'); return r.text(); })
-    ]).then(([html, cleanScript]) => {
+      fetch('portal.html?v=4', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('portal'); return r.text(); }),
+      fetch('portal-clean.js?v=4', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('clean'); return r.text(); }),
+      fetch('portal-enhance.js?v=4', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('enhance'); return r.text(); })
+    ]).then(([html, cleanScript, enhanceScript]) => {
       html = html.replace('</head>', largerPortalType + '</head>');
-      html = html.replace('</body>', '<script>' + cleanScript.replace(/<\/script>/gi,'<\\/script>') + '<\/script></body>');
+      const scripts = '<script>' + cleanScript.replace(/<\/script>/gi,'<\\/script>') + '<\/script><script>' + enhanceScript.replace(/<\/script>/gi,'<\\/script>') + '<\/script>';
+      html = html.replace('</body>', scripts + '</body>');
       document.open();
       document.write(html);
       document.close();
