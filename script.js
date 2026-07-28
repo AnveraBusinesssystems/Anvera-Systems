@@ -30,13 +30,13 @@ if (!prefersReducedMotion) {
 
 // Add portal access across the public website
 const publicNavLinks = document.querySelector('.nav-links');
-if (publicNavLinks && !publicNavLinks.querySelector('a[href="portal-large.html"]')) {
-  const existingPortalLink = publicNavLinks.querySelector('a[href="portal.html"]');
+if (publicNavLinks && !publicNavLinks.querySelector('a[href="portal.html"]')) {
+  const existingPortalLink = publicNavLinks.querySelector('a[href="portal-large.html"]');
   if (existingPortalLink) {
-    existingPortalLink.href = 'portal-large.html';
+    existingPortalLink.href = 'portal.html';
   } else {
     const portalItem = document.createElement('li');
-    portalItem.innerHTML = '<a href="portal-large.html">Portal Login</a>';
+    portalItem.innerHTML = '<a href="portal.html">Portal Login</a>';
     publicNavLinks.appendChild(portalItem);
   }
 }
