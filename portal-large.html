@@ -15,8 +15,8 @@
       </style>`;
 
     Promise.all([
-      fetch('portal.html?v=2', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('portal'); return r.text(); }),
-      fetch('portal-clean.js?v=2', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('clean'); return r.text(); })
+      fetch('portal.html?v=3', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('portal'); return r.text(); }),
+      fetch('portal-clean.js?v=3', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('clean'); return r.text(); })
     ]).then(([html, cleanScript]) => {
       html = html.replace('</head>', largerPortalType + '</head>');
       html = html.replace('</body>', '<script>' + cleanScript.replace(/<\/script>/gi,'<\\/script>') + '<\/script></body>');
