@@ -11,131 +11,21 @@
   <script>
     const largerPortalType = `
       <style id="larger-portal-type">
-        .eye{font-size:14px!important}
-        .brand small,.sideBrand small{font-size:12px!important}
-        .hero p{font-size:20px!important;line-height:1.75!important}
-        .preview span{font-size:14px!important}
-        .intro{font-size:17px!important;line-height:1.55!important}
-        .loginCard label{font-size:16px!important}
-        .loginCard input,.loginCard select{font-size:17px!important;padding:16px!important}
-        .pass button{font-size:14px!important}
-        .enter,.action{font-size:16px!important;padding:14px 19px!important}
-        .error,.back{font-size:14px!important}
-        .note{font-size:14px!important}
-        .nav button{font-size:16px!important;padding:14px!important}
-        .user strong{font-size:15px!important}
-        .user small{font-size:12px!important}
-        .logout{font-size:14px!important}
-        .top h2{font-size:35px!important}
-        .head h3,.welcome h3,.clientHero h3{font-size:44px!important}
-        .head p,.welcome p,.clientHero p{font-size:16px!important;line-height:1.55!important}
-        .chip,.status{font-size:13px!important;padding:7px 12px!important}
-        .alert strong{font-size:16px!important}
-        .alert p{font-size:14px!important}
-        .card>span{font-size:14px!important}
-        .card>strong{font-size:38px!important}
-        .card small{font-size:13px!important}
-        .panel h3{font-size:32px!important}
-        .list strong,.pay strong{font-size:15px!important}
-        .list small,.pay small{font-size:13px!important}
-        .money{font-size:22px!important}
-        .project h4,.client h4{font-size:30px!important}
-        .project p,.client p{font-size:14px!important;line-height:1.7!important}
-        .stages span{font-size:11px!important}
-        .meta small{font-size:12px!important}
-        .meta strong{font-size:15px!important}
-        .tableWrap th{font-size:12px!important}
-        .tableWrap td{font-size:14px!important;padding:16px!important}
-        .tableWrap td small{font-size:12px!important}
-        .stageMarks span{font-size:14px!important}
-        .stageMarks small{font-size:12px!important}
-        .update{font-size:15px!important;line-height:1.8!important}
-        .timeline h4{font-size:30px!important}
-        .timeline p{font-size:13px!important}
-        .timeline>div>strong{font-size:26px!important}
-        .file strong{font-size:14px!important}
-        .file small{font-size:12px!important}
-        .file button{font-size:13px!important}
-        .support label{font-size:15px!important}
-        .support textarea,.support select{font-size:16px!important}
-        .tickets strong{font-size:15px!important}
-        .tickets p{font-size:14px!important}
-        .tickets small{font-size:12px!important}
-        .empty-state{background:rgba(255,255,255,.72);border:1px dashed rgba(30,46,30,.18);border-radius:16px;padding:38px;text-align:center;color:#756f63}
-        .empty-state strong{display:block;color:#1a1a18;font:600 28px 'Cormorant Garamond';margin-bottom:8px}
-        @media(max-width:1000px){.content{padding-left:24px!important;padding-right:24px!important}}
-        @media(max-width:720px){.top h2{font-size:28px!important}.head h3,.welcome h3,.clientHero h3{font-size:38px!important}.panel h3{font-size:29px!important}.nav button{font-size:17px!important}.tableWrap td{font-size:13px!important}.stageMarks span{font-size:13px!important}}
+        .eye{font-size:14px!important}.brand small,.sideBrand small{font-size:12px!important}.hero p{font-size:20px!important;line-height:1.75!important}.preview span{font-size:14px!important}.intro{font-size:17px!important;line-height:1.55!important}.loginCard label{font-size:16px!important}.loginCard input,.loginCard select{font-size:17px!important;padding:16px!important}.pass button{font-size:14px!important}.enter,.action{font-size:16px!important;padding:14px 19px!important}.error,.back{font-size:14px!important}.note{font-size:14px!important}.nav button{font-size:16px!important;padding:14px!important}.user strong{font-size:15px!important}.user small{font-size:12px!important}.logout{font-size:14px!important}.top h2{font-size:35px!important}.head h3,.welcome h3,.clientHero h3{font-size:44px!important}.head p,.welcome p,.clientHero p{font-size:16px!important;line-height:1.55!important}.chip,.status{font-size:13px!important;padding:7px 12px!important}.alert strong{font-size:16px!important}.alert p{font-size:14px!important}.card>span{font-size:14px!important}.card>strong{font-size:38px!important}.card small{font-size:13px!important}.panel h3{font-size:32px!important}.list strong,.pay strong{font-size:15px!important}.list small,.pay small{font-size:13px!important}.money{font-size:22px!important}.project h4,.client h4{font-size:30px!important}.project p,.client p{font-size:14px!important;line-height:1.7!important}.stages span{font-size:11px!important}.meta small{font-size:12px!important}.meta strong{font-size:15px!important}.tableWrap th{font-size:12px!important}.tableWrap td{font-size:14px!important;padding:16px!important}.tableWrap td small{font-size:12px!important}.stageMarks span{font-size:14px!important}.stageMarks small{font-size:12px!important}.update{font-size:15px!important;line-height:1.8!important}.timeline h4{font-size:30px!important}.timeline p{font-size:13px!important}.timeline>div>strong{font-size:26px!important}.file strong{font-size:14px!important}.file small{font-size:12px!important}.file button{font-size:13px!important}.support label{font-size:15px!important}.support textarea,.support select{font-size:16px!important}.tickets strong{font-size:15px!important}.tickets p{font-size:14px!important}.tickets small{font-size:12px!important}.empty-state{background:rgba(255,255,255,.72);border:1px dashed rgba(30,46,30,.18);border-radius:16px;padding:38px;text-align:center;color:#756f63}.empty-state strong{display:block;color:#1a1a18;font:600 28px 'Cormorant Garamond';margin-bottom:8px}@media(max-width:1000px){.content{padding-left:24px!important;padding-right:24px!important}}@media(max-width:720px){.top h2{font-size:28px!important}.head h3,.welcome h3,.clientHero h3{font-size:38px!important}.panel h3{font-size:29px!important}.nav button{font-size:17px!important}.tableWrap td{font-size:13px!important}.stageMarks span{font-size:13px!important}}
       </style>`;
 
-    const cleanDataScript = `
-      <script>
-        (() => {
-          const empty = (title, text) => '<div class="empty-state"><strong>' + title + '</strong><span>' + text + '</span></div>';
-
-          document.querySelectorAll('.preview strong').forEach(el => el.textContent = '0');
-          document.querySelectorAll('#adminNav b, #clientNav b').forEach(el => el.remove());
-
-          const overview = document.querySelector('#overview');
-          if (overview) overview.innerHTML = ` + "`" + `
-            <div class="welcome"><div><h3>Welcome to your Anvera workspace.</h3><p>Your inquiries, projects, payments, support requests, and calendar will appear here once connected.</p></div><span class="chip">No activity yet</span></div>
-            <div class="metrics">
-              <article class="card"><span>Active projects</span><strong>0</strong><small>No active projects</small></article>
-              <article class="card"><span>Open inquiries</span><strong>0</strong><small>No new inquiries</small></article>
-              <article class="card"><span>Outstanding</span><strong>$0</strong><small>No unpaid balances</small></article>
-              <article class="card"><span>Monthly recurring</span><strong>$0</strong><small>No active subscriptions</small></article>
-            </div>
-            <div class="grid"><article class="panel"><span class="eye">Project pipeline</span><h3>Current workload</h3>${empty('No projects yet','Accepted clients and project stages will appear here.')}</article><article class="panel"><span class="eye">Calendar</span><h3>Upcoming schedule</h3>${empty('Nothing scheduled','Meetings, deadlines, and payment dates will appear here.')}</article></div>
-            <div class="grid equal"><article class="panel"><span class="eye">New business</span><h3>Recent inquiries</h3>${empty('No inquiries yet','Website inquiries and manually entered leads will appear here.')}</article><article class="panel"><span class="eye">Accounts receivable</span><h3>Upcoming payments</h3>${empty('No payments due','Upcoming and overdue balances will appear here.')}</article></div>
-          ` + "`" + `;
-
-          const inquiries = document.querySelector('#inquiries');
-          if (inquiries) inquiries.innerHTML = '<div class="head"><div><span class="eye">Lead management</span><h3>Inquiries</h3><p>Review requests, schedule meetings, and convert accepted proposals.</p></div><button class="action">+ Add inquiry</button></div>' + empty('No inquiries yet','New website inquiries and manually added leads will appear here.');
-
-          const projects = document.querySelector('#projects');
-          if (projects) projects.innerHTML = '<div class="head"><div><span class="eye">Delivery</span><h3>Projects</h3><p>Set timelines manually and update customer-visible progress.</p></div><button class="action">+ New project</button></div>' + empty('No projects yet','Accepted proposals will become projects here.');
-
-          const finances = document.querySelector('#finances');
-          if (finances) finances.innerHTML = ` + "`" + `<div class="head"><div><span class="eye">Financial tracking</span><h3>Payments & subscriptions</h3><p>Record payments manually and monitor due, paid, and overdue balances.</p></div><button class="action">+ Record payment</button></div><div class="metrics"><article class="card"><span>Collected this month</span><strong>$0</strong><small>No payments recorded</small></article><article class="card"><span>Outstanding</span><strong>$0</strong><small>No open balances</small></article><article class="card"><span>Overdue</span><strong>$0</strong><small>No overdue payments</small></article><article class="card"><span>Monthly recurring</span><strong>$0</strong><small>No subscriptions</small></article></div>${empty('No financial records yet','Invoices, payments, and subscriptions will appear here.')}` + "`" + `;
-
-          const support = document.querySelector('#support');
-          if (support) support.innerHTML = '<div class="head"><div><span class="eye">Client assistance</span><h3>Support requests</h3><p>Website problems, data issues, updates, and maintenance needs.</p></div><button class="action">+ Add ticket</button></div>' + empty('No support requests','Client assistance requests will appear here.');
-
-          const clientHome = document.querySelector('#clientHome');
-          if (clientHome) clientHome.innerHTML = '<div class="clientHero"><div><span class="eye">Client portal</span><h3>No project has been assigned yet.</h3><p>Once a project is created and connected to this customer account, progress will appear here.</p></div><span class="status warn">Not started</span></div>' + empty('No active project','Project progress, updates, upcoming milestones, and customer actions will appear here.');
-
-          const timeline = document.querySelector('#timeline');
-          if (timeline) timeline.innerHTML = '<div class="head"><div><span class="eye">Project plan</span><h3>Timeline</h3><p>Planned and actual progress across four stages.</p></div></div>' + empty('No timeline yet','Research, planning, creating, and implementing dates will appear here.');
-
-          const files = document.querySelector('#files');
-          if (files) files.innerHTML = '<div class="head"><div><span class="eye">Documents</span><h3>Project files</h3><p>Scope, invoices, deliverables, and shared files.</p></div><button class="action">Upload file</button></div>' + empty('No files yet','Project scope documents, invoices, and deliverables will appear here.');
-
-          const payments = document.querySelector('#payments');
-          if (payments) payments.innerHTML = ` + "`" + `<div class="head"><div><span class="eye">Billing</span><h3>Payments</h3><p>Project payment schedules and monthly service plans.</p></div></div><div class="metrics"><article class="card"><span>Project value</span><strong>$0</strong><small>No project assigned</small></article><article class="card"><span>Paid</span><strong>$0</strong><small>No payments recorded</small></article><article class="card"><span>Remaining</span><strong>$0</strong><small>No balance due</small></article><article class="card"><span>Monthly plan</span><strong>$0</strong><small>No active plan</small></article></div>${empty('No payment schedule','Invoices and payment milestones will appear here.')}` + "`" + `;
-
-          const help = document.querySelector('#help');
-          if (help) help.innerHTML = ` + "`" + `<div class="head"><div><span class="eye">Assistance</span><h3>Request help</h3><p>Report a problem, request an update, or ask for assistance.</p></div></div><div class="support"><form class="panel"><label>Request type</label><select><option>Website or system error</option><option>Data issue</option><option>Content update</option><option>New feature request</option></select><label>Priority</label><select><option>Normal</option><option>High — blocking work</option><option>Low — future update</option></select><label>Describe the request</label><textarea rows="7" placeholder="Tell us what happened and what you expected..."></textarea><button type="button" class="action" style="margin-top:15px;width:100%">Submit support request</button></form><article class="panel"><span class="eye">Open requests</span><h3>Support history</h3>${empty('No open requests','Submitted support requests will appear here.')}</article></div>` + "`" + `;
-
-          document.querySelector('#userName').textContent = 'Portal User';
-          document.querySelector('#userRole').textContent = 'Account not connected';
-          document.querySelector('#avatar').textContent = 'AU';
-        })();
-      <\/script>`;
-
-    fetch('portal.html', { cache: 'no-store' })
-      .then(response => {
-        if (!response.ok) throw new Error('Portal could not be loaded.');
-        return response.text();
-      })
-      .then(html => {
-        html = html.replace('</head>', largerPortalType + '</head>');
-        html = html.replace('</body>', cleanDataScript + '</body>');
-        document.open();
-        document.write(html);
-        document.close();
-      })
-      .catch(() => {
-        document.body.innerHTML = '<div class="loading">The portal could not be loaded. Please refresh the page.</div>';
-      });
+    Promise.all([
+      fetch('portal.html?v=2', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('portal'); return r.text(); }),
+      fetch('portal-clean.js?v=2', {cache:'no-store'}).then(r => { if(!r.ok) throw new Error('clean'); return r.text(); })
+    ]).then(([html, cleanScript]) => {
+      html = html.replace('</head>', largerPortalType + '</head>');
+      html = html.replace('</body>', '<script>' + cleanScript.replace(/<\/script>/gi,'<\\/script>') + '<\/script></body>');
+      document.open();
+      document.write(html);
+      document.close();
+    }).catch(() => {
+      document.body.innerHTML = '<div class="loading">The portal could not be loaded. Please refresh the page.</div>';
+    });
   </script>
 </body>
 </html>
